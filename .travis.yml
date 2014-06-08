@@ -7,4 +7,6 @@ go:
 
 install: go get code.google.com/p/go.crypto/curve25519
 
-script: go get github.com/tang0th/go-ecdh && go test github.com/tang0th/go-ecdh
+script:
+- go get github.com/tang0th/go-ecdh 
+- go test github.com/tang0th/go-ecdh
