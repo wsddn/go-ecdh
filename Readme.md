@@ -1,4 +1,4 @@
-# ChaCha20
+# ECDH
 
 [![Build Status](https://travis-ci.org/tang0th/go-ecdh.svg?branch=master)](https://travis-ci.org/tang0th/go-ecdh)
 
