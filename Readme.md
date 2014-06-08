@@ -7,7 +7,10 @@ It supports the NIST curves (and any curves using the `elliptic.Curve` go interf
 as well as djb's curve25519. 
 
 The library handles generating of keys, generating a shared secret, and the
-(un)marshaling of the elliptical curve keys into slices of bytes.
+(un)marshalling of the elliptical curve keys into slices of bytes.
+
+## Compatibility
+Works with go 1.2 onwards.
 
 ## TODO
  * Improve documentation
