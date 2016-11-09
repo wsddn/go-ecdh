@@ -4,7 +4,7 @@ go:
   - 1.2
   - tip
 
-install: go get code.google.com/p/go.crypto/curve25519
+install: go get golang.org/x/crypto/curve25519
 
 script:
 - go get github.com/tang0th/go-ecdh 
