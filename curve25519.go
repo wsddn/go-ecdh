@@ -26,10 +26,11 @@ func (e *curve25519ECDH) GenerateKey(rand io.Reader) (crypto.PrivateKey, crypto.
 		return nil, nil, err
 	}
 
+	priv[0] &= 248
+	priv[31] &= 127
+	priv[31] |= 64
+
 	curve25519.ScalarBaseMult(&pub, &priv)
-  priv[0] &= 248
-  priv[31] &= 127
-  priv[31] |= 64
 
 	return &priv, &pub, nil
 }
